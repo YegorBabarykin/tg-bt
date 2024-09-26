@@ -30,6 +30,11 @@ function App() {
                     Show Alert
                 </button>
             </div>
+            <div className="card">
+                <button onClick={() => WebApp.showScanQrPopup({text:`some text`}, (text)=> WebApp.showAlert(text))}>
+                    scan qr
+                </button>
+            </div>
         </>
     )
 }
